@@ -113,6 +113,21 @@ slider.on(.ValueChanged) { [unowned self] _ in
 
 ## Installation
 
+### Use SwiftPM
+
+## In an app project
+To install using [Swift Package Manager](https://github.com/apple/swift-package-manager) you can follow the [tutorial published by Apple](https://developer.apple.com/documentation/xcode/adding_package_dependencies_to_your_app) using the URL for the GestureRecognizerClosures repo with the current version:
+
+1. In Xcode, select “File” → “Add Packages...”
+2. Enter https://github.com/lawmaestro/GestureRecognizerClosures.git
+
+## In a Swift package project
+```swift
+package.dependencies.append(
+    .package(url: "https://github.com/lawmaestro/GestureRecognizerClosures.git", from: "5.0.0")
+)
+```
+
 ### Use CocoaPods
 
 [CocoaPods](http://cocoapods.org/about) is a dependency manager for Cocoa projects that supports embedded frameworks for Swift.
